@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4 - Envio de Dados (POST)</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Questão 4: Envio de Dados (POST)</h1>
+    <p><strong>Enunciado:</strong> Crie um formulário simples com um campo de entrada para o nome do usuário. Ao clicar no botão, envie os dados para uma API simulada via POST e exiba uma mensagem de sucesso.</p>
+    
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <button onclick="enviarDados()">Enviar</button>
+    <p id="resposta"></p>
+
+    <script>
+        function enviarDados() {
+            let nome = document.getElementById("nome").value;
+            fetch("https://jsonplaceholder.typicode.com/posts", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nome: nome })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("resposta").innerText = "Dados enviados com sucesso!";
+            })
+            .catch(error => console.error("Erro no envio", error));
+        }
+    </script>
+</body>
+</html>

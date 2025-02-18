@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1 - HTML Semântico e CSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        article { padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Questão 1: HTML Semântico e CSS</h1>
+    <p><strong>Enunciado:</strong> Utilize HTML semântico para estruturar um pequeno artigo e aplique CSS para estilização. Adicione um botão que, ao ser clicado, altera a cor do texto do parágrafo utilizando JavaScript.</p>
+    
+    <article>
+        <p id="texto">Este é um parágrafo estilizado com CSS.</p>
+        <button onclick="mudarCor()">Mudar Cor</button>
+    </article>
+
+    <script>
+        function mudarCor() {
+            document.getElementById("texto").style.color = "blue";
+        }
+    </script>
+</body>
+</html>

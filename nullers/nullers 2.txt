@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 - Interatividade no DOM</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .imagem { width: 200px; display: block; margin-top: 10px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Questão 2: Interatividade no DOM</h1>
+    <p><strong>Enunciado:</strong> Implemente um botão que, ao ser clicado, troca a imagem exibida na página. Adicione também um botão extra que mostra ou oculta um parágrafo oculto.</p>
+    
+    <button onclick="trocarImagem()">Trocar Imagem</button>
+    <img id="imagem" class="imagem" src="https://via.placeholder.com/200" alt="Imagem padrão">
+    <button onclick="mostrarTexto()">Mostrar Texto Oculto</button>
+    <p id="textoOculto" class="hidden">Texto agora visível!</p>
+
+    <script>
+        function trocarImagem() {
+            let img = document.getElementById("imagem");
+            img.src = img.src.includes("200") ? "https://via.placeholder.com/200/0000FF" : "https://via.placeholder.com/200";
+        }
+
+        function mostrarTexto() {
+            document.getElementById("textoOculto").classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

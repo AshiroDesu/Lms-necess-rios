@@ -1,0 +1,13 @@
+
+        <h2>Questão 1: HTML Semântico e CSS</h2>
+        <p><strong>Enunciado:</strong> Utilize HTML semântico para estruturar um pequeno artigo e aplique CSS para estilização. Adicione um botão que, ao ser clicado, altera a cor do texto do parágrafo utilizando JavaScript.</p>
+       
+          <h2>Questão 2: Interatividade no DOM</h2>
+        <p><strong>Enunciado:</strong> Implemente um botão que, ao ser clicado, troca a imagem exibida na página. Adicione também um botão extra que mostra ou oculta um parágrafo oculto.</p>
+        
+        <h2>Questão 3: Requisição a API (GET)</h2>
+        <p><strong>Enunciado:</strong> Faça uma requisição a uma API pública para obter os dados de um usuário e exiba seu nome e email na tela.</p>
+      
+        <h2>Questão 4: Envio de Dados (POST)</h2>
+        <p><strong>Enunciado:</strong> Crie um formulário simples com um campo de entrada para o nome do usuário. Ao clicar no botão, envie os dados para uma API simulada via POST e exiba uma mensagem de sucesso.</p>
+     
